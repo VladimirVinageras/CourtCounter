@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ru.nice_solutions.courtcounter.MainActivity">
+
+    <TextView
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Team A"
+        android:textSize="14sp"
+        android:gravity="center_horizontal"
+        android:padding="4dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="0"
+        android:textSize="14sp"
+        android:padding="4dp"
+        android:id="@+id/team_a_score"
+        />
+
+    <Button
+    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+3 Points"
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        android:layout_margin="4dp"
+        android:onClick="add3ForTeamA"
+    />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+2 Points"
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        android:layout_margin="4dp"
+        android:onClick="add2ForTeamA"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Free throw"
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        android:layout_margin="4dp"
+        android:onClick="add1ForTeamA"
+        />
+</LinearLayout>
